@@ -33,6 +33,11 @@ Cynbit Business Assistant is a **working prototype / MVP** that demonstrates sem
 ### 6. Lead capture and pipeline
 ![Cynbit lead capture and pipeline](docs/screenshots/06-lead-pipeline.png)
 
+### 7. Email notification proof
+![Cynbit CRM email notifications](docs/screenshots/07-email-notification-proof.png)
+
+The screenshot shows repeated “Cynbit CRM — New Lead Notification” emails, providing visual evidence that webhook-triggered email notifications were received during testing.
+
 ## 🧰 Technology Stack
 
 - **Frontend:** React, TypeScript, Vite
