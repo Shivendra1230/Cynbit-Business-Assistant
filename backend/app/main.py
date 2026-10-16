@@ -143,7 +143,16 @@ async def lifespan(_: FastAPI):
         logger.info("Cynbit API lifespan ended")
 
 app = FastAPI(title="Cynbit AI Business Assistant API", description="Evidence-grounded assistant with specialized agent routing.", version="0.7.0", lifespan=lifespan)
-app.add_middleware(CORSMiddleware, allow_origins=settings.cors_origin_list, allow_credentials=True, allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"], allow_headers=["Authorization", "Content-Type"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        *settings.cors_origin_list,
+        "https://cynbit-business-assistant.vercel.app",
+    ],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=["*"],
+)
 
 @app.get("/", tags=["system"])
 def root():
