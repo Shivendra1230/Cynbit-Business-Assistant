@@ -6,6 +6,46 @@ An AI-powered business workspace for Cynbit that combines company knowledge sear
 
 > **Status:** Development prototype. Knowledge search, the assistant UI, CRM dashboard, SQLite lead storage, analytics, and the Pipedream/Gmail test-notification workflow have been exercised during development. Production use still requires deployment hardening, persistent hosted storage, access controls, monitoring, and backups.
 
+
+## 🚀 Live Demo
+
+**[Open Cynbit Business Assistant](https://cynbit-business-assistant.vercel.app/)** · **[GitHub Repository](https://github.com/Shivendra1230/Cynbit-Business-Assistant)**
+
+Cynbit Business Assistant is a **working prototype / MVP** that demonstrates semantic company-knowledge retrieval, evidence-aware AI chat, CRM-style lead management, analytics, and outbound webhook integration.
+
+## 📸 Product Screenshots
+
+### 1. Dashboard overview
+![Cynbit dashboard overview](docs/screenshots/01-dashboard-overview.png)
+
+### 2. Semantic knowledge search
+![Cynbit semantic knowledge search](docs/screenshots/02-knowledge-search.png)
+
+### 3. AI assistant conversation
+![Cynbit AI assistant conversation](docs/screenshots/03-ai-assistant.png)
+
+### 4. CRM and analytics overview
+![Cynbit CRM and analytics overview](docs/screenshots/04-crm-analytics.png)
+
+### 5. Budget distribution and integrations
+![Cynbit budget distribution and integrations](docs/screenshots/05-budget-and-integrations.png)
+
+### 6. Lead capture and pipeline
+![Cynbit lead capture and pipeline](docs/screenshots/06-lead-pipeline.png)
+
+## 🧰 Technology Stack
+
+- **Frontend:** React, TypeScript, Vite
+- **Backend:** FastAPI
+- **Semantic retrieval:** FastEmbed with ONNX runtime
+- **Conversational AI:** Groq API (when configured)
+- **Prototype data storage:** SQLite
+- **Analytics:** Recharts
+- **Deployment:** Vercel (frontend) and Render (backend)
+
+> **Prototype note:** This project demonstrates an end-to-end working prototype. Before production use, prioritize authentication and role-based access, managed persistent database storage, secrets management, monitoring, backups, and systematic AI-quality evaluation.
+
+
 ## Contents
 
 - [Features](#features)
