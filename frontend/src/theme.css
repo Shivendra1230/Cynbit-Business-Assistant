@@ -1,0 +1,21 @@
+/* Theme tokens: add this at the end of frontend/src/styles.css */
+:root{--page:#f4f6f7;--surface:#fff;--surface-soft:#fbfdfd;--text:#202b35;--heading:#1f2e33;--body:#64727b;--border:#e0e6e7;--soft:#f6f8f8;--input:#fbfdfd;--teal:#087f78;color-scheme:light}
+:root[data-theme="dark"]{--page:#11191b;--surface:#182225;--surface-soft:#151f21;--text:#dce7e7;--heading:#edf5f4;--body:#a5b4b6;--border:#2b3a3d;--soft:#202d30;--input:#131d1f;--teal:#5ed4c3;color-scheme:dark}
+body{background:var(--page);color:var(--text);transition:background .18s,color .18s}
+.sidebar,.topbar,.search-panel,.aside-card,.roadmap-cards article,.connection-banner{background:var(--surface);border-color:var(--border)}
+.brand strong,.crumb strong,.hero h1,.section-head h2,.search-panel h3,.results-heading h4,.result-card>strong,.aside-card h3,.aside-foot strong,.roadmap-cards h3{color:var(--heading)}
+.brand small,.side-label,.side-link,.side-count,.privacy-note,.workspace-user small,.crumb,.connection-copy span,.connection-label,.hero-copy>p,.hero-meta span,.section-head p,.panel-description,.panel-kicker,.aside-overline,.aside-card p,.aside-foot span,.result-card p,.similarity,.footer{color:var(--body)}
+.side-link.active{color:var(--teal);background:color-mix(in srgb,var(--teal) 11%,var(--surface))}
+.search-form,.result-card{background:var(--surface-soft);border-color:var(--border)}
+.search-form input{background:transparent;color:var(--text)}
+.search-form input::placeholder{color:var(--body)}
+.suggestions button,.roadmap-tag,.phase-pill,.env-label,.theme-toggle{background:var(--soft);border-color:var(--border);color:var(--body)}
+.panel-icon,.aside-icon{background:color-mix(in srgb,var(--teal) 12%,var(--surface));color:var(--teal)}
+.theme-toggle{display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid var(--border);border-radius:7px;font-size:12px;font-weight:700;cursor:pointer}
+.theme-toggle svg{color:var(--teal)}
+.theme-toggle:hover,.retry-button:hover{filter:brightness(.97)}
+.retry-button{border:1px solid var(--border);border-radius:7px;background:var(--surface);padding:9px 12px;color:var(--teal);font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.connection-banner{box-shadow:0 8px 24px rgba(25,45,48,.04)}
+.orb-node{background:var(--surface);border-color:var(--border);color:var(--teal)}
+.result-card-head{display:flex;justify-content:space-between;gap:10px}
+@media(max-width:760px){.topbar{height:auto;align-items:flex-start;flex-direction:column}.top-actions{flex-wrap:wrap}.retry-button{margin-left:51px}}
